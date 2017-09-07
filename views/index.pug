@@ -1,0 +1,207 @@
+extends layout
+
+block content
+  .loader
+  #myDiv
+    // HEADER
+    .header
+      .bg-color
+        header#main-header
+          nav.navbar.navbar-default.navbar-fixed-top
+            .container
+              .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+                a.navbar-brand(href='#')
+                  img.linqulogo(src='/images/Logo_medium.png')
+              #myNavbar.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                  li.active
+                    a(href='#main-header') Home
+                  li
+                    a(href='#usp') Why
+                  li
+                    a(href='#portfolio') How
+                  li
+                    a(href='#contact') Contact Us
+        .wrapper
+          .container
+            .row
+              .banner-info.text-center.wow.fadeIn.delay-05s
+                h2.bnr-sub-title We LinqU to IT!
+                p.bnr-para.introtext
+                  | Sign up on our website today, get screened by our team and be ready to get a job offer that truly matches your personality!
+                .brn-btn.aboutlinqu
+                  a.btn.btn-download(href='#feature') Watch the video!
+                .overlay-detail
+                  a(href='#feature')
+                    i.fa.fa-angle-down
+    // / HEADER
+    // 
+    section#feature.section-padding.wow.fadeIn.delay-05s
+      .container.video-container
+        h2 
+          span B
+          | ECAUSE WATCHING A VIDEO IS ALWAYS EASIER
+        .col-md-8.col-sm-12.col-xs-12.col-md-offset-2.col-lg-6.col-lg-offset-3
+          .embed-responsive.embed-responsive-16by9
+            iframe.center-block(src='https://www.youtube.com/embed/dQw4w9WgXcQ')  
+    section#usp.section-padding.wow.fadeIn.delay-05s
+      .container
+        //- FIRST ROW USP'S 
+        .row.usprow
+          .col-md-4.col-sm-6.col-xs-12.uspitem
+            .wrap-item.text-center
+              .item-img
+                i.fa.fa-user-circle.fa-4x
+              h3.pad-bt15 Online screening
+              p
+                | How do we get to know you best? Create your personal profile, fill in your preferences and experiences. Then, challenge yourself to pass the thorough screening to become visible for your future dream team. 
+          .col-md-4.col-sm-6.col-xs-12.uspitem
+            .wrap-item.text-center
+              .item-img
+                i.fa.fa-comments-o.fa-4x
+              h3.pad-bt15 Focus on personality
+              p
+                | Done with the non-personal approach by pushy recruiters? You get screened on your personality and motivation to find your most suitable culture fit.
+          .col-md-4.col-sm-6.col-xs-12.uspitem
+            .wrap-item.text-center
+              .item-img
+                i.fa.fa-home.fa-4x
+              h3.pad-bt15 Housing support
+              p
+                | How could you work without having a residence? LinqU provides for each developer housing support in order to find the perfect place to stay for you (and your family).    
+          //- SECOND ROW USP'S
+          .col-md-4.col-sm-6.col-xs-12.uspitem
+            .wrap-item.text-center
+              .item-img
+                i.fa.fa-handshake-o.fa-4x
+              h3.pad-bt15 Matching
+              p
+                | Frustrated by all traditional recruitment processes? According to your preferences, LinqU will offer you a top-10 list of the best fitting companies.
+          .col-md-4.col-sm-6.col-xs-12.uspitem
+            .wrap-item.text-center
+              .item-img
+                i.fa.fa-money.fa-4x
+              h3.pad-bt15 Bring a friend
+              p
+                | Want to earn a little extra? Receive an immediate bonus fee of €500,- if you find your friend’s dream job! 
+          .col-md-4.col-sm-6.col-xs-12.uspitem
+            .wrap-item.text-center
+              .item-img
+                i.fa.fa-question-circle.fa-4x
+              h3.pad-bt15 Stay anonymous
+              p
+                | Annoyed by the aggressive approach of traditional recruitment agencies? At LinqU developers will be anonymous, unless you get in contact with a company. 
+    // 
+    // 
+    section#service.section-padding.wow.fadeInUp.delay-05s
+      .container.outer
+        .row.middle
+          .col-md-6.text-center
+            .row
+              img.img.img-responsive.col-sm-8.col-sm-offset-2(src='images/Logo_medium.png')
+              p.sub-title.pad-bt15.col-sm-4.col-sm-offset-4
+                | Our screening consists of several phases to ensure quality
+            hr.bottom-line
+          img.img.img-responsive.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-0(src='images/linqu-funnel.png')
+          
+    // 
+    // 
+    // 
+    // 
+    section#portfolio.section-padding.wow.fadeInUp.delay-05s
+      .container
+        .row  
+          .col-md-12.text-center
+            h2.service-title.pad-bt15 What you need to do to start:
+            hr.bottom-line
+          .col-md-6.col-sm-8.col-xs-12.col-sm-offset-2.col-md-offset-0.portfolio-item.padding-right-zero.mr-btn-15.steplist
+            h2 Being a developer:
+            ul.custom-bullet
+              li Register for an employee account 
+              li Upload your CV
+              li Indicate your salary preferences
+              li Indicatie your personal qualities
+              li See your personal top 10 of companies
+          .col-md-6.col-sm-8.col-xs-12.col-sm-offset-2.col-md-offset-0.portfolio-item.padding-right-zero.mr-btn-15.steplist
+            h2 Being an employer:
+            ul.custom-bullet
+              li Register a employers account
+              li Indicate which kind of developers would strengthen your company
+              li You can enter preferences on personal as well as technical area
+              li See the top 10 of your potential employees
+
+    // 
+    // 
+    // 
+    // 
+    section#contact.section-padding.wow.fadeInUp.delay-05s
+      .container
+        .row
+          .col-md-12.text-center.white
+            h2.service-title.pad-bt15 Keep in touch with us
+            p.sub-title.pad-bt15
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              br
+              | tempor incididunt ut labore et dolore magna aliqua.
+            hr.bottom-line.white-bg
+          .col-md-6.col-sm-6.col-xs-12
+            .loction-info.white
+              p
+                i.fa.fa-map-marker.fa-fw.pull-left.fa-2x
+                | A99 Adam Street
+                br
+                | Texas, TX 555072
+              p
+                i.fa.fa-envelope-o.fa-fw.pull-left.fa-2x
+                | info@baker.com
+              p
+                i.fa.fa-phone.fa-fw.pull-left.fa-2x
+                | +41 5787 2323
+          .col-md-6.col-sm-6.col-xs-12
+            .contact-form
+              #sendmessage Your message has been sent. Thank you!
+              #errormessage
+              form.contactForm(action='', method='post', role='form')
+                .col-md-6.padding-right-zero
+                  .form-group
+                    input#name.form-control(type='text', name='name', placeholder='Your Name', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
+                    .validation
+                .col-md-6
+                  .form-group
+                    input#email.form-control(type='email', name='email', placeholder='Your Email', data-rule='email', data-msg='Please enter a valid email')
+                    .validation
+                .col-md-12
+                  .form-group
+                    input#subject.form-control(type='text', name='subject', placeholder='Subject', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
+                    .validation
+                .col-md-12
+                  .form-group
+                    textarea.form-control(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Message')
+                    .validation
+                  button.btn.btn-primary.btn-submit(type='submit') SEND NOW
+
+    // 
+    // 
+    footer#footer
+      .container
+        .row.text-center
+          p © Baker Theme. All Rights Reserved.
+          .credits
+            //
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Baker
+            | Designed  by 
+            a(href='https://bootstrapmade.com/') Bootstrap Themes
+    // 
+  script(src='/javascripts/jquery.min.js')
+  script(src='/javascripts/jquery.easing.min.js')
+  script(src='/javascripts/bootstrap.min.js')
+  script(src='/javascripts/wow.js')
+  script(src='/javascripts/jquery.bxslider.min.js')
+  script(src='/javascripts/custom.js')
