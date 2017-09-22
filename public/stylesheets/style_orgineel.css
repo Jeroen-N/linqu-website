@@ -150,9 +150,12 @@ HEADER
     background: transparent;
     -webkit-transition: color 0.2s ease-out;
     transition: color 0.2s ease-out;
+    color: #fff;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #2a96ff;
+    color: #000;
+    font-weight: bold;
+    /**color: #2a96ff;**/
     background-color: transparent;
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
