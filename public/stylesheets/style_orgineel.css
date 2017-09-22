@@ -175,6 +175,9 @@ HEADER
 .banner-info h2{
     font-size: 50px;
 }
+.usprow .uspitem{
+        min-height: 290px;
+}
 
 }
 
