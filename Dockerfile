@@ -7,6 +7,12 @@ WORKDIR /usr/src/linqu
  
 # Install app dependencies
 COPY . /usr/src/linqu
-RUN npm install
+
+#npm install with python installed
+RUN apk --no-cache add --virtual native-deps \
+  g++ gcc libgcc libstdc++ linux-headers make python && \
+  npm install --quiet node-gyp -g &&\
+  npm install --quiet && \
+  apk del native-deps
   
 CMD [ "npm", "start" ]
