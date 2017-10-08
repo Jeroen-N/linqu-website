@@ -1,14 +1,10 @@
 FROM node:alpine
 EXPOSE 3000
 
-# Create app directory
-RUN mkdir -p /usr/src/linqu
-WORKDIR /usr/src/linqu
- 
-# Install app dependencies
-COPY . /usr/src/linqu
+#Copy App
+COPY . .
 
-#npm install with python installed
+#npm install with python installed and remove python after install
 RUN apk --no-cache add --virtual native-deps \
   g++ gcc libgcc libstdc++ linux-headers make python && \
   npm install --quiet node-gyp -g &&\
