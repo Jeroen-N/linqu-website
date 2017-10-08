@@ -8,15 +8,15 @@ router.get('/', (req, res, next) => {
     title: "LinqU - Don't let your place of residence limit your career!"
   });
 });
-router.post('/', (req, res, next) => {
+router.post('/contactform', (req, res, next) => {
   var nodemailer = require('nodemailer');
   var transporter = nodemailer.createTransport({
-    host: 'SMTP SERVER',
+    host: 'smtp02.hostnet.nl',
     port: 587,
     secure: false, /* Use STARTTLS, instead of deprecated SMTPS */
     auth: {
-      user: 'SMTP USER',
-      pass: 'SMTP PASSWORD'
+      user: 'contactformulier@linqu.io',
+      pass: 'IEV6q51u'
     }
   });
   var mailOptions = {
