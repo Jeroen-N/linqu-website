@@ -84,11 +84,22 @@ a {
   background-color: rgba(42, 150, 255, 0.5); }
 
 .bluewhite {
-  background-color: #1c6bea; }
+  background-color: #1c6bea; 
+  height: 0.1667%;
+  }
 
 .bluewhite p {
-  color: #fff; }
+  color: #fff; 
+  font-size: 1.8vw
+}
 
+.greywhite {
+  height: 0.1667%;
+  }
+
+.greywhite p {
+  font-size: 1.8vw
+}
 .nomargin {
   padding-left: 0;
   padding-right: 0; }
@@ -100,5 +111,11 @@ a {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 0; }
+
+#phase-img {
+  position: relative;
+  left: 1%;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=style.css.map */

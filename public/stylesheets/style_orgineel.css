@@ -13,6 +13,7 @@ body {
     font-weight: 300;
     letter-spacing: 0.5px;
     overflow-x: hidden;
+    width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -95,6 +96,13 @@ HEADER
     max-height: 800px;
     position: relative;
 }
+@media (max-width: 450px) and (min-width: 20px){
+    .header{
+        background: url('/images/bg_tryout1_mobile3.png') no-repeat center fixed;
+        background-size: cover; 
+    }
+}
+
 .bg-color
 {
     background-color: rgba(255,255,255,0.1);
@@ -256,6 +264,10 @@ h2.bnr-sub-title
    font-size: 38px;
    color: #fff;
 }
+#arrow {
+    position: relative;
+    bottom: 12.5px;
+}
 /***********************************
 ************************************
 features
@@ -274,6 +286,11 @@ features
 .sub-title
 {
     font-size: 20px;
+}
+#phasesubtitle
+{
+    position: relative;
+    text-align: center;
 }
 .bottom-line
 {
