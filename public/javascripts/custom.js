@@ -10,6 +10,7 @@
     // Navigation scrolls
     $('.navbar-nav li a').bind('click', function(event) {
         $('.navbar-nav li').removeClass('active');
+        $('.navbar-nav2 li').removeClass('active');
         $(this).closest('li').addClass('active');
         var $anchor = $(this);
         var nav = $($anchor.attr('href'));
@@ -21,7 +22,7 @@
         event.preventDefault();
         }
     });
-    
+
     // About section scroll
     $(".overlay-detail a").on('click', function(event) {
         event.preventDefault();
@@ -55,8 +56,12 @@
     $(window).scroll(function() {
         if ($(".navbar-default").offset().top > 50) {
             $(".navbar-fixed-top").addClass("top-nav-collapse");
+            $(".navbar-right").removeClass("navbar-nav");
+            $(".navbar-right").addClass("navbar-nav2");
         } else {
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            $(".navbar-right").removeClass("navbar-nav2");
+            $(".navbar-right").addClass("navbar-nav");
         }
     });
     
