@@ -13,6 +13,7 @@ body {
     font-weight: 300;
     letter-spacing: 0.5px;
     overflow-x: hidden;
+    width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -95,6 +96,13 @@ HEADER
     max-height: 800px;
     position: relative;
 }
+@media (max-width: 450px) and (min-width: 20px){
+    .header{
+        background: url('/images/bg_tryout1_mobile3.png') no-repeat center fixed;
+        background-size: cover; 
+    }
+}
+
 .bg-color
 {
     background-color: rgba(255,255,255,0.1);
@@ -160,8 +168,33 @@ HEADER
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
     background-color: transparent;
-    color: #2a96ff;
+    color: #000;
 }
+
+.navbar-default .navbar-nav2 > li > a
+{
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 54px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: transparent;
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+    color: #2a97fe;
+}
+
+.navbar-default .navbar-nav2 > .active > a, .navbar-default .navbar-nav2 > .active > a:focus, .navbar-default .navbar-nav2 > .active > a:hover {
+    color: #000;
+    font-weight: bold;
+    /**color: #2a96ff;**/
+    background-color: transparent;
+}
+.navbar-default .navbar-nav2 > li > a:focus, .navbar-default .navbar-nav2 > li > a:hover {
+    background-color: transparent;
+    color: #000;
+}
+
 .banner-info
 {
     padding-top: 300px; 
@@ -256,6 +289,10 @@ h2.bnr-sub-title
    font-size: 38px;
    color: #fff;
 }
+#arrow {
+    position: relative;
+    bottom: 12.5px;
+}
 /***********************************
 ************************************
 features
@@ -274,6 +311,11 @@ features
 .sub-title
 {
     font-size: 20px;
+}
+#phasesubtitle
+{
+    position: relative;
+    text-align: center;
 }
 .bottom-line
 {
