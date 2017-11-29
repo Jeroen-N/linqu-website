@@ -34,6 +34,7 @@ export default function () {
               </ul>
             </div>
           </div>
+          <div id="startButton" />
         </div>
       </div>
     </section>
@@ -42,7 +43,7 @@ export default function () {
 
 //  /* USAGE EXAMPLE */
 //  // jsx
-//  import template from './C:\Users\Millen-Laptop\Documents\linqu-react\src\Pug\whattodo.pug';
+//  import template from './C:\Users\Millen-Laptop\Documents\linqu-website\linqu-react\src\Pug\whattodo.pug';
 //
 //  class Report extends React.Component {
 //

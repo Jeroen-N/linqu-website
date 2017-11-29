@@ -8,31 +8,33 @@ export default function () {
           <div className="col-md-12 text-center white">
             <h2 className="service-title pad-bt15">Keep in touch with us</h2>
             <p className="sub-title pad-bt15">
-              If you happen to have any question, fill in you credentials and question below and you'll hear from us soon!
+              If you happen to have any questions, fill out the form below and you'll hear from us soon!
               <br />
               Together we'll find your dream job.
             </p>
             <hr className="bottom-line white-bg" />
           </div>
-          <div className="col-md-6 col-sm-6 col-xs-12">
+          <div className="col-md-12">
             <div className="loction-info white">
-              <p>
+              <p id="Address">
                 <i className="fa fa-map-marker fa-fw pull-left fa-2x" />
                 Uilenstede 506-39
                 <br />
                 1183DE Amstelveen
               </p>
-              <p>
+              <br id="mobile-br" />
+              <p id="Email">
                 <i className="fa fa-envelope-o fa-fw pull-left fa-2x" />
                 info@linqu.io
               </p>
-              <p>
+              <br id="mobile-br" />
+              <p id="Phonenr">
                 <i className="fa fa-phone fa-fw pull-left fa-2x" />
                 +31 642 467 690
               </p>
             </div>
           </div>
-          <div className="col-md-6 col-sm-6 col-xs-12">
+          <div className="col-md-12">
             <div className="contact-form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage" />
@@ -87,7 +89,7 @@ export default function () {
                       data-rule="required"
                       name="message"
                       placeholder="Message"
-                      rows="5"
+                      rows="8"
                     />
                     <div className="validation" />
                   </div>
@@ -104,7 +106,7 @@ export default function () {
 
 //  /* USAGE EXAMPLE */
 //  // jsx
-//  import template from './C:\Users\Millen-Laptop\Documents\linqu-react\src\Pug\contact.pug';
+//  import template from './C:\Users\Millen-Laptop\Documents\linqu-website\linqu-react\src\Pug\contact.pug';
 //
 //  class Report extends React.Component {
 //

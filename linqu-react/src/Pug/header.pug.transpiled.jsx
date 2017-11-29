@@ -43,7 +43,7 @@ export default function () {
 
 //  /* USAGE EXAMPLE */
 //  // jsx
-//  import template from './C:\Users\Millen-Laptop\Documents\linqu-react\src\Pug\header.pug';
+//  import template from './C:\Users\Millen-Laptop\Documents\linqu-website\linqu-react\src\Pug\header.pug';
 //
 //  class Report extends React.Component {
 //

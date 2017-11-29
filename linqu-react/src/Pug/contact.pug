@@ -4,24 +4,26 @@ section#Contact.section-padding.wow.fadeInUp.delay-05s
           .col-md-12.text-center.white
             h2.service-title.pad-bt15 Keep in touch with us
             p.sub-title.pad-bt15
-              | If you happen to have any question, fill in you credentials and question below and you'll hear from us soon!
+              | If you happen to have any questions, fill out the form below and you'll hear from us soon!
               br
               | Together we'll find your dream job.
             hr.bottom-line.white-bg
-          .col-md-6.col-sm-6.col-xs-12
+          .col-md-12
             .loction-info.white
-              p
+              p#Address
                 i.fa.fa-map-marker.fa-fw.pull-left.fa-2x
                 | Uilenstede 506-39
                 br
                 | 1183DE Amstelveen
-              p
+              br#mobile-br
+              p#Email
                 i.fa.fa-envelope-o.fa-fw.pull-left.fa-2x
                 | info@linqu.io
-              p
+              br#mobile-br 
+              p#Phonenr
                 i.fa.fa-phone.fa-fw.pull-left.fa-2x
                 | +31 642 467 690
-          .col-md-6.col-sm-6.col-xs-12
+          .col-md-12
             .contact-form
               #sendmessage Your message has been sent. Thank you!
               #errormessage
@@ -40,6 +42,6 @@ section#Contact.section-padding.wow.fadeInUp.delay-05s
                     .validation
                 .col-md-12
                   .form-group
-                    textarea.form-control(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Message')
+                    textarea.form-control(name='message', rows='8', data-rule='required', data-msg='Please write something for us', placeholder='Message')
                     .validation
                   button.btn.btn-primary.btn-submit(type='submit') SEND NOW

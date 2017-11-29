@@ -1,0 +1,11 @@
+render: function() {
+    EventSystem.subscribe('change-comp', this.listener);
+    var renderlist = [];
+    var optionalrender = [todo.call(this), service.call(this), photos.call(this), video.call(this), form.call(this)];
+    var index = this.state.index;
+    renderlist.push(header.call(this));
+    renderlist.push(optionalrender[index]);
+    renderlist.push(contact.call(this));
+    renderlist.push(footer.call(this));
+    return renderlist;
+  }

@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .section-padding
 {
-    padding: 60px 0px;
+    padding: 0px 0px;
 }
 #loader {
   position: absolute;
@@ -291,7 +291,7 @@ h2.bnr-sub-title
 }
 #arrow {
     position: relative;
-    bottom: 12.5px;
+    bottom: 0px;
 }
 /***********************************
 ************************************
@@ -634,6 +634,7 @@ contact
 #Contact
 {
     background-color: rgb(73, 84, 105);
+    padding-bottom: 60px;
 }
 .btn-submit, .btn-submit:hover, .btn-submit:focus
 {
@@ -651,6 +652,7 @@ contact
     border-radius: 0px;
     color: #2a96ff !important;
     border-color: #2a96ff;
+    resize: none;
 }
 .form-control:focus {
     border-color: #2a96ff;
@@ -697,10 +699,26 @@ contact
 .loction-info p
 {
     margin-bottom: 25px;
+    display:inline-flex;
 }
 .loction-info p i
 {
     color: #2a96ff;
+}
+#Address {
+    float:left;
+    margin-left: 5em;
+    margin-right: 3em;
+}
+#Email{
+    float:left;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+#Phonenr{
+    margin-right: 5em;
+    margin-left: 3em;
+    float:left;
 }
 /***********************************
 ************************************
@@ -823,6 +841,22 @@ body{
 }
 .loction-info{
     padding: 0px 15px;
+    display: block;
+}
+#Address{
+    float:none;
+    margin-left: 4em;
+    margin-right: 0;
+}
+#Email{
+    float: none;
+    margin-left: 4em;
+    margin-right: 0;
+}
+#Phonenr{
+    float:none;
+    margin-left: 4em;
+    margin-right: 0;
 }
 .portfolio-item figure figcaption {
     padding: 30px 30px;
@@ -847,7 +881,11 @@ body{
     text-align: center;
 }
 }
-
+@media (min-width: 450px) {
+    #mobile-br{
+        display:none;
+    }
+}
 /*FOR VIDEO CONTAINER*/
 
 .video-container {

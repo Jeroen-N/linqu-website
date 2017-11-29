@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function () {
   return (
-    <section className="section-padding wow fadeIn delay-05s" id="feature">
+    <section className="section-padding wow fadeIn delay-05s" id="Video">
       <div className="container video-container">
         <h2>BECAUSE WATCHING A VIDEO IS ALWAYS EASIER</h2>
         <div className="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-lg-6 col-lg-offset-3">
@@ -17,7 +17,7 @@ export default function () {
 
 //  /* USAGE EXAMPLE */
 //  // jsx
-//  import template from './C:\Users\Millen-Laptop\Documents\linqu-react\src\Pug\video.pug';
+//  import template from './C:\Users\Millen-Laptop\Documents\linqu-website\linqu-react\src\Pug\video.pug';
 //
 //  class Report extends React.Component {
 //

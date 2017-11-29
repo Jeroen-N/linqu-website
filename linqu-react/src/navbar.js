@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import createClass from 'create-react-class';
 import classNames from 'classnames';
 import smoothScroll from './SmoothScroll';
+import EventSystem from './EventSystem';
 
 var ListItem = createClass({
     propTypes: {
@@ -30,7 +31,7 @@ var ListItem = createClass({
             <li
                 onClick={this.props.onClick}
                 className={klas}>
-                <a href='#'>{this.props.name}</a>
+                <a>{this.props.name}</a>
             </li>
         );
     }
@@ -39,13 +40,32 @@ var List = createClass({
     getInitialState: function() {
         return {
             selectedItem: 0
+            
         };
     },
+
+    externalClickHandler: function(compID) {
+        this.setState({selectedItem: compID});
+    },
+    waitBeforeScroll: function(compID){
+        var components = this.props.data.map(function(item) {
+            return item.name;
+        });
+        console.log(components);
+        var component = components[compID];
+        console.log('compID: '+ compID + " component: "+ component);
+        smoothScroll.scrollTo("Top");
+        console.log("scrolled to Top");
+    },
+
     clickHandler: function(item, idx) {
+        EventSystem.subscribe('comp-change', this.waitBeforeScroll);
         this.setState({selectedItem: idx});
-        smoothScroll.scrollTo(item.name);
+        EventSystem.publish('change-comp', idx);
     },
     render: function() {
+        EventSystem.subscribe('extclick', this.externalClickHandler);
+        EventSystem.subscribe('comp-change', this.waitBeforeScroll);
         var items = this.props.data.map(function (item, idx) {
             var is_selected = this.state.selectedItem == idx;
             return <ListItem
@@ -67,9 +87,10 @@ export class Navbar extends Component {
     render() {
         var data = [];
         data.push({name: 'Home'});
-        data.push({name: 'Why'});
         data.push({name: 'How'});
-        data.push({name: 'Contact'});
+        data.push({name: 'Why'});
+        data.push({name: 'Video'});
+        data.push({name: 'Register'});
 
     return (
         <div>
